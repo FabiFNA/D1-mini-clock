@@ -125,6 +125,10 @@ String getDOW(uint8_t tm_wday)
 {
   switch(tm_wday)
   {
+    case 0:
+      return "Sunday";
+      break;
+    
     case 1:
       return "Monday";
       break;
@@ -147,10 +151,6 @@ String getDOW(uint8_t tm_wday)
 
     case 6:
       return "Saturday";
-      break;
-
-    case 7:
-      return "Sunday";
       break;
 
     default:
